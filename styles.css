@@ -9,7 +9,7 @@
   --dark-gray: #9b9ba4;
   --green: #46bcb5;
   --blue: #5662d0;
-  --normal-red: #f99d9a;
+  --normal-red: #f06d66;
   --red-warning: #e1403d;
   --dark-black: #243e63;
 }
@@ -548,9 +548,7 @@ details p{
 .caller{
   
   width: 100%;
-  padding: 2rem;
-  
-
+  padding: 9rem 2rem;
 }
 
 .call--to{
@@ -572,15 +570,23 @@ height: 300px;
 }
 .btn-call--container{
   padding: 5rem;
+
  
 }
 .btn-call-red{
-  background-color: var(--red-warning);
+  background-color: var(--normal-red);
   color: #fff;
   padding: 1.5rem 3rem;
   font-weight: 700;
   font-size: 1rem;
   box-shadow: 2px 4px 8px var(--primary);
+  border-radius: 30px;
+  font-weight: bold;
+ border: none;
+}
+.btn-call-red:hover{
+
+  background-color: var(--red-warning);
 }
 .btn-call-purple{
   border: 1px solid #fff;
@@ -588,4 +594,45 @@ height: 300px;
   margin-left: 1.2rem;
   font-weight: 700;
   font-size: 1rem;
+  background-color: var(--primary);
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  
+}
+
+.btn-call-purple:hover{
+  background-color: #fff;
+  color: var(--primary);
+}
+
+footer{
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--primary);
+}
+
+
+.footer-lists{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0rem;
+  border-bottom: 1px solid var(--blue) ;
+}
+.footer-lists h3,
+.footer-lists li{
+  color: #fff;
+}
+
+.footer-lists li{
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.footer-hr{
+  color: var(--blue);
+  padding: 0 2rem;
+  background-color: red;
 }
