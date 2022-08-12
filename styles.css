@@ -473,15 +473,13 @@ li {
   justify-content: center;
   padding: 3rem 0;
   align-content: center;
-  flex-wrap: wrap;
-  width: calc(100 / 3);
+  
+  width: 100%;
 }
 
 .card {
   border: 1px solid var(--light-gray);
-
-  text-align: center;
-
+ text-align: center;
   width: 23rem;
   margin: 1.5rem;
   border-radius: 8px;
@@ -951,6 +949,11 @@ margin-left: 0;
  .btn-call--container{
   
   padding: 0;
+ }
+ .pricing--cards{
+ flex-wrap: wrap;
+  flex-direction: column;
+ 
  }
 }
 
