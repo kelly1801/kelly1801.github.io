@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="assests/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/7453c59f9a.js" crossorigin="anonymous"></script>  
+    <script src="index.js"></script>
+
 </head>
   <body>
     <div class="row flex column-flex">
@@ -39,12 +41,43 @@
               <li class="btn--sign">Sign Up</li>
             </ul>
           </div>
+    
+          <!--toggle nav starts-->
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close"  onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="" class="menu__link"  onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Blog</a></li>
+              <li class="menu__list">
+                <a href="" class="menu__link" onclick="closeMenu()">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link" onclick="closeMenu()">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link" onclick="closeMenu()">login</a>
+              </li>
+              <li class="menu__list btn--sign">
+                <a href="" class="menu__link white-text" onclick="closeMenu()">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+     <!--toggle nav ends-->
+
         </div>
+    
     </nav>
 
     <!--Navegation bar ends-->
     <section id="landing">
-        <div class="row flex">
+        <div class="section--container">
         <div class="section--description">
             <h2 class="section--title">
                 Beautiful React Templates <span class="purple--text">for you.</span> 
@@ -62,7 +95,7 @@
 
         <figure class="logos__banner">
             <span class="gray--span">OUR TRUSTED CUSTOMERS</span> 
-            <img src="./assests/logos-banner.pn" class="logos__banner--img" alt="">
+            <img src="./assests/logos-banner.png" class="logos__banner--img" alt="">
         </figure>
         </div>
 
@@ -77,16 +110,18 @@
 </header>
 
 <!--features section starts-->
+
 <main>
+    
 <section id="features">
-    <div class="row">
+    
     <div class="features__text">
 <h3 class="purple--text section--subtitle">FEATURES</h3>
 <h2 class="section__text--title">We have Amazing <span class="purple--text"> Service.</span></h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 
-<div class="row">
+
 <div class="features-container">
    
     <div class="feature">
@@ -151,40 +186,49 @@
     </div>
     </div>
     </div>
-</div>
-</div>
+
+
 </section>
 <!--features section ends-->
 
 <section id="qualities">
 
-    <div class="section--container">
+    <div class="section--container section--container-medium">
         
         
-        <div class="section--description">
-            <h3 class="purple--text section--subtitle">QUALITY WORK</h3>
-            <h2 class="section--title text--left">
+        <div class="section--description section--description-medium">
+            <h3 class="purple--text section--subtitle section--subtitle-medium">QUALITY WORK</h3>
+            <h2 class="section--title section--title-medium text--left">
 Designed & Developed by <span class="purple--text">Professionals.</span> 
             </h2>
-            <p class="section--par ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="section--par section--par-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <button class="btn--sign quality--button">Learn more</button>
         </div>
 
-            <figure class="section__hero--img">
-                <img src="./assests/hero-screenshot.png" alt="" class="hero--img b-light">
+            <figure class="section__hero--img-medium section__hero--img">
+                <img src="./assests/hero-screenshot.png" alt="" class="hero--img b-light hero--img-medium">
             </figure>
        
-    
-</div>
-<div class="section--container">
         
-    <figure class="section__hero--img w-60">
-        <img src="./assests/laptop-hero-screenshot.png" alt="" class="hero--img h-90 w-90">
-    </figure>
+</div>
 
-    <div class="section--description w-40">
-        <h3 class="purple--text section--subtitle">STEPS</h3>
-        <h2 class="section--title text--left">
+</section>
+
+
+
+
+<section class="steps">
+
+    <div class="section--container section--container-medium">
+        
+        <figure class="section__hero--img w-60 section__hero--img-medium">
+            <img src="./assests/laptop-hero-screenshot.png" alt="" class="hero--img hero--img-medium h-90 w-90">
+        </figure>
+
+
+    <div class="section--description section--description-medium w-40">
+        <h3 class="purple--text section--subtitle section--subtitle-medium">STEPS</h3>
+        <h2 class="section--title section--title-medium text--left">
             Easy to <span class="purple--text">Get Started.</span> 
         </h2>
          
@@ -195,16 +239,16 @@ Designed & Developed by <span class="purple--text">Professionals.</span>
 <div class="number--icon"><span class="number--list">01</span> </div>
 
 <div>
-        <li class="section--li">Register</li>
-    <p class="section__li--p">Create an account with us using Google or Facebook.</p>
+        <li class="section--li section--li-medium">Register</li>
+    <p class="section__li--p section__li--p-medium "> create an account with us using Google or Facebook.</p>
 </div>
 </div>
 
 <div class="section__group--li">
     <div class="number--icon"><span class="number--list">02</span> </div>
    <div>
-    <li class="section--li">Download</li>
-    <p class="section__li--p">Browse and Download the template that you like from the marketplace.</p>
+    <li class="section--li section--li-medium">Download</li>
+    <p class="section__li--p section__li--p-medium">Browse and Download the template that you like from the marketplace.</p>
 </div>
 </div>
     
@@ -213,8 +257,8 @@ Designed & Developed by <span class="purple--text">Professionals.</span>
         <div class="number--icon"><span class="number--list">03</span> </div>
         
         <div>
-        <li class="section--li">Run</li>
-        <p class="section__li--p">Follow the instructions to setup and customize the template to your needs.</p>
+        <li class="section--li section--li-medium">Run</li>
+        <p class="section__li--p section__li--p-medium">Follow the instructions to setup and customize the template to your needs.</p>
     </div>
         
 
@@ -224,28 +268,31 @@ Designed & Developed by <span class="purple--text">Professionals.</span>
     </div>
 
         
-   
+</section>
 
-</div>
 
-<div class="section--container">
+
+<section class="steps">
+<div class="section--container section--container-medium">
         
         
-    <div class="section--description">
-        <h3 class="purple--text section--subtitle">VALUES</h3>
-        <h2 class="section--title text--left">
+    <div class="section--description section--description-medium">
+        <h3 class="purple--text section--subtitle section--subtitle-medium">VALUES</h3>
+        <h2 class="section--title section--title-medium text--left">
             We Always Abide by Our <span class="purple--text">Principles.</span> 
         </h2>
-        <p class="section--par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="section--par section--par-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
    
         <div class="two--row-container">
-            <div>
+            
+            <div class="icon-header">
                 
             <h3><i class="fa-solid fa-dollar-sign dollar-icon icon"></i> Affordable</h3>
 <p class="font-small">We promise to offer you the best rate we can - at par with the industry standard.</p>
 
 </div>
-<div>
+
+<div class="icon-header">
    
     <h3> <i class="fa-solid fa-suitcase suitcase--icon icon"></i> Professionalism</h3>
 <p class="font-small">We assure you that our templates are designed and created by professional designers.</p>
@@ -255,12 +302,13 @@ Designed & Developed by <span class="purple--text">Professionals.</span>
         <button class="btn--sign quality--button">Learn more</button>
     </div>
 
-        <figure class="section__hero--img">
-            <img src="./assests/prototype-illustration.svg" alt="" class="hero--img">
+        <figure class="section__hero--img section__hero--img-medium">
+            <img src="./assests/prototype-illustration.svg" alt="" class="hero--img hero--img-medium">
         </figure>
    
 
 </div>
+
 </section>
 
 <section id="pricing">
@@ -467,8 +515,10 @@ Designed & Developed by <span class="purple--text">Professionals.</span>
 </article>
 </section>
 
-
+</div>
 </main>
+
+
 
 
 <footer>
@@ -537,7 +587,6 @@ Designed & Developed by <span class="purple--text">Professionals.</span>
 </div>
 
 </footer>
-</div>
 
   </body>
 </html>
