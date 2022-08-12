@@ -868,7 +868,90 @@ margin: 0;
   
  
   }
+#pricing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+.pricing--text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+  #pricing .section--title,
+  .faqs-section .section--title{
+    font-size: 2.7rem;
+    padding: 0;
+    margin: 0;
+  }
+#pricing .pricing--par-heading{
+  font-size: 1rem;
+width: 100%;
+line-height: 1.5;
+padding-top:1.5rem;
+ 
+}
 
+
+.star-rating{
+  
+  justify-content: flex-start;
+  display: flex;
+}
+.star-rating i{
+  margin-right: 5px;
+}
+.testimonial--subtitle{
+  text-align: left;
+}
+.customer-photo-container{
+margin-left: 0;
+}
+.faqs-section .section--par{
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  color: var(--dark-gray);
+}
+.faqs-section{
+ 
+  padding: 0;
+}
+.questions {
+  
+  padding: 1rem 0rem;
+  max-width: none;
+ 
+}
+
+
+
+.caller {
+  width: 100%;
+  padding: 9rem 2rem;
+}
+
+.call--to {
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+
+}
+.call--to h2 {
+  
+  text-align: center;
+  width: auto;
+  padding: 0;
+ 
+ }
+ .btn-call--container{
+  
+  padding: 0;
+ }
 }
 
 
