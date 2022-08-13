@@ -194,7 +194,8 @@ li {
 #landing {
   width: 100vw;
   height: 100vh - 80px;
-  padding-top: 4.5%;
+  
+  padding-top: 4.5% ;
   display: flex;
   justify-content: space-around;
 }
@@ -715,7 +716,7 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  
+ 
   .nav--list,
   .login--list{
     display: none;
@@ -744,6 +745,12 @@ footer {
     margin: 0;
     padding: 1rem 4rem;
     color: var(--dark-black);
+  }
+  #landing {
+    
+    
+    padding: 4.5% 5rem;
+    
   }
   .landing__input--email {
     width: 60%;
@@ -961,8 +968,12 @@ margin-left: 0;
  }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 974px) {
   
+  nav{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   .landing__email--form{
    
     flex-direction: column;
@@ -1274,5 +1285,6 @@ footer span,
 .footer-icon{
   padding: 1rem 0;
 }
+
 }
 
