@@ -240,6 +240,7 @@ li {
 
 .landing__input--email {
   width: 80%;
+  max-width: 421px;
   height: 3rem;
   padding: 2rem;
   border-radius: 35px;
