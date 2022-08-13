@@ -535,6 +535,11 @@ li {
   color: var(--primary);
   padding: 1rem 2rem;
 }
+.testimonials .section--description{
+  
+  align-items: center;
+ 
+}
 .customer-container {
   display: flex;
 }
@@ -892,7 +897,6 @@ padding-top:1.5rem;
  
 }
 
-
 .star-rating{
   
   justify-content: flex-start;
@@ -1025,6 +1029,10 @@ font-size: 1rem;
   margin: 0 auto;
   padding: 0;
 
+}
+
+.testimonials h2{
+  text-align: center;
 }
 
 .feature--icon img {
@@ -1162,6 +1170,8 @@ font-size: 1rem;
 
 padding: 0 3rem;
   flex-direction: column;
+  align-items: center;
+justify-content: center;
 }
 .testimonials .section__hero--img-small{
   padding: 0;
